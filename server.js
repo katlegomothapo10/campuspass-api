@@ -4,6 +4,7 @@ const cors = require('cors');
 require('dotenv').config();
 
 const db = require('./config/database');
+const authRoutes = require('./routes/auth');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -25,7 +26,7 @@ app.get('/', (req, res) => {
 // Test database connection
 app.get('/test-db', (req, res) => {
   try {
-   const result = db.prepare("SELECT datetime('now') as current_time").get();
+    const result = db.prepare("SELECT datetime('now') as current_time").get();
     res.json({ 
       message: 'Database connected!',
       time: result.current_time
@@ -37,6 +38,9 @@ app.get('/test-db', (req, res) => {
     });
   }
 });
+
+// Routes
+app.use('/api/auth', authRoutes);
 
 // Start server
 app.listen(PORT, () => {
