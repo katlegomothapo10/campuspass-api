@@ -5,6 +5,8 @@ require('dotenv').config();
 
 const db = require('./config/database');
 const authRoutes = require('./routes/auth');
+const userRoutes = require('./routes/users');
+const { errorHandler, notFound } = require('./middlewares/errorHandler');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -41,6 +43,11 @@ app.get('/test-db', (req, res) => {
 
 // Routes
 app.use('/api/auth', authRoutes);
+app.use('/api/users', userRoutes);
+
+// Error handling (MUST be last)
+app.use(notFound);
+app.use(errorHandler);
 
 // Start server
 app.listen(PORT, () => {
