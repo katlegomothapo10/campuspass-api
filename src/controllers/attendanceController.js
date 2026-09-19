@@ -1,4 +1,4 @@
-﻿const Attendance = require('../models/attendanceModel');
+const Attendance = require('../models/attendanceModel');
 const Ticket = require('../models/ticketModel');
 const Event = require('../models/eventModel');
 const db = require('../config/db');

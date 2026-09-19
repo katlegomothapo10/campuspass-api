@@ -1,4 +1,4 @@
-﻿name: CampusPass API CI
+name: CampusPass API CI
 on:
   push:
     branches: [ main, develop ]

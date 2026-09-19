@@ -1,4 +1,4 @@
-﻿const Event = require('../models/eventModel');
+const Event = require('../models/eventModel');
 const Attendance = require('../models/attendanceModel');
 
 function buildCsv(event, stats, records) {

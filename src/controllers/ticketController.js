@@ -1,4 +1,4 @@
-﻿const QRCode = require('qrcode');
+const QRCode = require('qrcode');
 const Ticket = require('../models/ticketModel');
 const Event = require('../models/eventModel');
 

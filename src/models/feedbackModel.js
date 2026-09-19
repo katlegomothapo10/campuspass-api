@@ -1,4 +1,4 @@
-﻿const db = require('../config/db');
+const db = require('../config/db');
 
 function createFeedback({ eventId, userId, rating, comment, anonymous }) {
   const stmt = db.prepare(`

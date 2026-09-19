@@ -1,4 +1,4 @@
-﻿const Sync = require('../models/syncModel');
+const Sync = require('../models/syncModel');
 
 function validateIso(iso) {
   if (!iso) return null;

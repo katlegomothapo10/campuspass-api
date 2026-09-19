@@ -1,4 +1,4 @@
-﻿const Waitlist = require('../models/waitlistModel');
+const Waitlist = require('../models/waitlistModel');
 const Event = require('../models/eventModel');
 
 exports.join = (req, res, next) => {

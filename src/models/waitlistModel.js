@@ -1,4 +1,4 @@
-﻿const db = require('../config/db');
+const db = require('../config/db');
 
 function getByEventAndUser(eventId, userId) {
   return db.prepare('SELECT * FROM waitlist WHERE eventId = ? AND userId = ?').get(eventId, userId);

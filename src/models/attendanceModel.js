@@ -1,4 +1,4 @@
-﻿const db = require('../config/db');
+const db = require('../config/db');
 
 function markAttendance(ticketId, eventId, userId, scannedByUserId) {
   const stmt = db.prepare(`

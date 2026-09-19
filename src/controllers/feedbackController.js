@@ -1,4 +1,4 @@
-﻿const Feedback = require('../models/feedbackModel');
+const Feedback = require('../models/feedbackModel');
 const Event = require('../models/eventModel');
 const Ticket = require('../models/ticketModel');
 
