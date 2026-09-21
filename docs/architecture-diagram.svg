@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 950" font-family="Arial, sans-serif">
+<rect width="1000" height="950" fill="white"/>
+<text x="500" y="40" font-size="26" font-weight="bold" text-anchor="middle">CampusPass - System Architecture</text>
+
+<rect x="350" y="80" width="280" height="110" rx="15" fill="#1a1a1a"/>
+<text x="490" y="115" font-size="18" font-weight="bold" text-anchor="middle" fill="white">Android App (Kotlin)</text>
+<text x="490" y="140" font-size="14" text-anchor="middle" fill="#ddd">Jetpack Compose UI</text>
+<text x="490" y="160" font-size="14" text-anchor="middle" fill="#ddd">RoomDB offline cache</text>
+<text x="490" y="180" font-size="14" text-anchor="middle" fill="#ddd">Retrofit HTTP client</text>
+
+<line x1="490" y1="190" x2="490" y2="290" stroke="black" stroke-width="3"/>
+<polygon points="490,305 480,285 500,285" fill="black"/>
+<text x="505" y="230" font-size="14" fill="black" font-weight="bold">HTTPS / JSON</text>
+<text x="505" y="250" font-size="14" fill="black" font-weight="bold">JWT Bearer tokens</text>
+
+<rect x="230" y="310" width="540" height="420" rx="20" fill="#1a1a1a"/>
+<text x="500" y="345" font-size="20" font-weight="bold" text-anchor="middle" fill="white">CampusPass REST API</text>
+<text x="500" y="370" font-size="15" text-anchor="middle" fill="#ddd">Node.js + Express</text>
+
+<rect x="270" y="390" width="460" height="80" rx="8" fill="none" stroke="white" stroke-width="2"/>
+<text x="500" y="418" font-size="15" font-weight="bold" text-anchor="middle" fill="white">Middleware</text>
+<text x="500" y="440" font-size="13" text-anchor="middle" fill="#ddd">JWT auth | Error handler</text>
+
+<rect x="270" y="500" width="140" height="50" rx="5" fill="none" stroke="white" stroke-width="2"/>
+<text x="340" y="530" font-size="13" text-anchor="middle" fill="white">Auth</text>
+<rect x="430" y="500" width="140" height="50" rx="5" fill="none" stroke="white" stroke-width="2"/>
+<text x="500" y="530" font-size="13" text-anchor="middle" fill="white">Events</text>
+<rect x="590" y="500" width="140" height="50" rx="5" fill="none" stroke="white" stroke-width="2"/>
+<text x="660" y="530" font-size="13" text-anchor="middle" fill="white">Tickets</text>
+
+<rect x="270" y="570" width="140" height="50" rx="5" fill="none" stroke="white" stroke-width="2"/>
+<text x="340" y="600" font-size="13" text-anchor="middle" fill="white">Waitlist</text>
+<rect x="430" y="570" width="140" height="50" rx="5" fill="none" stroke="white" stroke-width="2"/>
+<text x="500" y="600" font-size="13" text-anchor="middle" fill="white">Attendance</text>
+<rect x="590" y="570" width="140" height="50" rx="5" fill="none" stroke="white" stroke-width="2"/>
+<text x="660" y="600" font-size="13" text-anchor="middle" fill="white">Feedback</text>
+
+<rect x="350" y="640" width="140" height="50" rx="5" fill="none" stroke="white" stroke-width="2"/>
+<text x="420" y="670" font-size="13" text-anchor="middle" fill="white">Reports</text>
+<rect x="510" y="640" width="140" height="50" rx="5" fill="none" stroke="white" stroke-width="2"/>
+<text x="580" y="670" font-size="13" text-anchor="middle" fill="white">Sync</text>
+
+<rect x="40" y="450" width="140" height="150" rx="12" fill="#1a1a1a"/>
+<text x="110" y="490" font-size="14" font-weight="bold" text-anchor="middle" fill="white">Azure App</text>
+<text x="110" y="510" font-size="14" font-weight="bold" text-anchor="middle" fill="white">Service</text>
+<text x="110" y="540" font-size="12" text-anchor="middle" fill="#ddd">Linux / Node 22</text>
+<text x="110" y="560" font-size="12" text-anchor="middle" fill="#ddd">Free Tier</text>
+
+<line x1="180" y1="525" x2="220" y2="525" stroke="black" stroke-width="3"/>
+<polygon points="230,525 215,515 215,535" fill="black"/>
+<text x="205" y="513" font-size="13" text-anchor="middle" fill="black" font-weight="bold">Hosts</text>
+
+<rect x="820" y="450" width="150" height="120" rx="12" fill="#1a1a1a"/>
+<text x="895" y="495" font-size="14" font-weight="bold" text-anchor="middle" fill="white">Google OAuth</text>
+<text x="895" y="520" font-size="14" font-weight="bold" text-anchor="middle" fill="white">2.0</text>
+<text x="895" y="545" font-size="12" text-anchor="middle" fill="#ddd">SSO verification</text>
+
+<line x1="780" y1="510" x2="810" y2="510" stroke="black" stroke-width="3"/>
+<polygon points="820,510 805,500 805,520" fill="black"/>
+<text x="795" y="498" font-size="13" text-anchor="middle" fill="black" font-weight="bold">Verify ID token</text>
+
+<rect x="350" y="800" width="280" height="110" rx="15" fill="#1a1a1a"/>
+<text x="490" y="830" font-size="16" font-weight="bold" text-anchor="middle" fill="white">SQLite Database</text>
+<text x="490" y="852" font-size="13" text-anchor="middle" fill="#ddd">10 tables: users, clubs, events,</text>
+<text x="490" y="870" font-size="13" text-anchor="middle" fill="#ddd">tickets, attendance, feedback,</text>
+<text x="490" y="888" font-size="13" text-anchor="middle" fill="#ddd">settings, notifications, waitlist,</text>
+<text x="490" y="906" font-size="13" text-anchor="middle" fill="#ddd">audit_logs</text>
+
+<line x1="490" y1="730" x2="490" y2="790" stroke="black" stroke-width="3"/>
+<polygon points="490,800 480,785 500,785" fill="black"/>
+<text x="505" y="770" font-size="13" fill="black" font-weight="bold">SQL (better-sqlite3)</text>
+</svg>
